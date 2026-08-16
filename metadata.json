@@ -1,0 +1,6 @@
+{
+  "name": "AANO BAZAR (আনো বাজার)",
+  "description": "Modern, mobile-first E-Commerce & Network Marketing Platform with AI Auto Placement, Multi-Vendor Marketplace, Live Delivery Tracking & Grocery Shopping in Bangladesh.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
