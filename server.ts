@@ -507,6 +507,15 @@ async function startServer() {
     });
   });
 
+  // Catch-all for unmatched /api routes — return JSON 404, not HTML
+  app.all('/api/*', (_req, res) => {
+    res.status(404).json({
+      success: false,
+      error: 'Not Found',
+      message: 'The requested API endpoint does not exist.'
+    });
+  });
+
   // Vite Middleware for Development
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
